@@ -16,8 +16,8 @@
 		5B334CC42534F49B008002AE /* jason-wong-bYoRZI30nEI-unsplash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5B334CC12534F49B008002AE /* jason-wong-bYoRZI30nEI-unsplash.jpg */; };
 		5B334CC52534F49B008002AE /* simone-secci-49uySSA678U-unsplash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5B334CC22534F49B008002AE /* simone-secci-49uySSA678U-unsplash.jpg */; };
 		5B334CDB2535516A008002AE /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B334CDA2535516A008002AE /* RegisterViewController.swift */; };
-		5B52AA672536209000A5AFDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B52AA652536209000A5AFDB /* Main.storyboard */; };
 		5B5F2BC0253638B900D04EE0 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B5F2BBF253638B900D04EE0 /* Colors.xcassets */; };
+		5B5F2BC425363DAE00D04EE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B5F2BC325363DAE00D04EE0 /* Main.storyboard */; };
 		5BAE0EDF25361CF20093D3F3 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAE0EDE25361CF20093D3F3 /* ForgotPasswordViewController.swift */; };
 		5BAE0EE125361D290093D3F3 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAE0EE025361D290093D3F3 /* Colors.swift */; };
 		5BAE0EE325361D6E0093D3F3 /* GradientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAE0EE225361D6E0093D3F3 /* GradientViewController.swift */; };
@@ -35,9 +35,8 @@
 		5B334CC12534F49B008002AE /* jason-wong-bYoRZI30nEI-unsplash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "jason-wong-bYoRZI30nEI-unsplash.jpg"; sourceTree = "<group>"; };
 		5B334CC22534F49B008002AE /* simone-secci-49uySSA678U-unsplash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "simone-secci-49uySSA678U-unsplash.jpg"; sourceTree = "<group>"; };
 		5B334CDA2535516A008002AE /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		5B52AA662536209000A5AFDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../ProyectoFinal_iOS/ProyectoFinal_iOS/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5B5F2BBF253638B900D04EE0 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
-		5B5F2BC225363B5600D04EE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = ../../ProyectoFinal_iOS/ProyectoFinal_iOS/en.lproj/Main.strings; sourceTree = "<group>"; };
+		5B5F2BC325363DAE00D04EE0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5BAE0EDE25361CF20093D3F3 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		5BAE0EE025361D290093D3F3 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		5BAE0EE225361D6E0093D3F3 /* GradientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientViewController.swift; sourceTree = "<group>"; };
@@ -85,7 +84,7 @@
 				5B334CC22534F49B008002AE /* simone-secci-49uySSA678U-unsplash.jpg */,
 				5BAE0EDE25361CF20093D3F3 /* ForgotPasswordViewController.swift */,
 				5BAE0EE025361D290093D3F3 /* Colors.swift */,
-				5B52AA652536209000A5AFDB /* Main.storyboard */,
+				5B5F2BC325363DAE00D04EE0 /* Main.storyboard */,
 				5BAE0EE225361D6E0093D3F3 /* GradientViewController.swift */,
 				5B5F2BBF253638B900D04EE0 /* Colors.xcassets */,
 			);
@@ -153,7 +152,7 @@
 				5B334CC32534F49B008002AE /* annie-spratt-vGgn0xLdy8s-unsplash.jpg in Resources */,
 				5B334CB02534F3EE008002AE /* LaunchScreen.storyboard in Resources */,
 				5B334CC52534F49B008002AE /* simone-secci-49uySSA678U-unsplash.jpg in Resources */,
-				5B52AA672536209000A5AFDB /* Main.storyboard in Resources */,
+				5B5F2BC425363DAE00D04EE0 /* Main.storyboard in Resources */,
 				5B334CC42534F49B008002AE /* jason-wong-bYoRZI30nEI-unsplash.jpg in Resources */,
 				5B334CAD2534F3EE008002AE /* Assets.xcassets in Resources */,
 				5B5F2BC0253638B900D04EE0 /* Colors.xcassets in Resources */,
@@ -186,15 +185,6 @@
 				5B334CAF2534F3EE008002AE /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		5B52AA652536209000A5AFDB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5B52AA662536209000A5AFDB /* Base */,
-				5B5F2BC225363B5600D04EE0 /* en */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
