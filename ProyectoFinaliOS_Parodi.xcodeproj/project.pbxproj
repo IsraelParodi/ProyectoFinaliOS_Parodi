@@ -15,9 +15,9 @@
 		5B334CC32534F49B008002AE /* annie-spratt-vGgn0xLdy8s-unsplash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5B334CC02534F49A008002AE /* annie-spratt-vGgn0xLdy8s-unsplash.jpg */; };
 		5B334CC42534F49B008002AE /* jason-wong-bYoRZI30nEI-unsplash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5B334CC12534F49B008002AE /* jason-wong-bYoRZI30nEI-unsplash.jpg */; };
 		5B334CC52534F49B008002AE /* simone-secci-49uySSA678U-unsplash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5B334CC22534F49B008002AE /* simone-secci-49uySSA678U-unsplash.jpg */; };
-		5B334CCB2535068C008002AE /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B334CCA2535068C008002AE /* Colors.xcassets */; };
 		5B334CDB2535516A008002AE /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B334CDA2535516A008002AE /* RegisterViewController.swift */; };
 		5B52AA672536209000A5AFDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B52AA652536209000A5AFDB /* Main.storyboard */; };
+		5B5F2BC0253638B900D04EE0 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B5F2BBF253638B900D04EE0 /* Colors.xcassets */; };
 		5BAE0EDF25361CF20093D3F3 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAE0EDE25361CF20093D3F3 /* ForgotPasswordViewController.swift */; };
 		5BAE0EE125361D290093D3F3 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAE0EE025361D290093D3F3 /* Colors.swift */; };
 		5BAE0EE325361D6E0093D3F3 /* GradientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAE0EE225361D6E0093D3F3 /* GradientViewController.swift */; };
@@ -31,12 +31,12 @@
 		5B334CAC2534F3EE008002AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B334CAF2534F3EE008002AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B334CB12534F3EE008002AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5B334CC02534F49A008002AE /* annie-spratt-vGgn0xLdy8s-unsplash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "annie-spratt-vGgn0xLdy8s-unsplash.jpg"; path = "/Users/chirra/Desktop/Información - ISIL/ISIL/3er_Ciclo/Desarrollo_apps_ios/DESARROLLO DE APLICACIONES PARA IPHONE/ProyectoFinaliOS_Parodi/../../../../../../annie-spratt-vGgn0xLdy8s-unsplash.jpg"; sourceTree = "<absolute>"; };
-		5B334CC12534F49B008002AE /* jason-wong-bYoRZI30nEI-unsplash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "jason-wong-bYoRZI30nEI-unsplash.jpg"; path = "../../../../../../../jason-wong-bYoRZI30nEI-unsplash.jpg"; sourceTree = "<group>"; };
-		5B334CC22534F49B008002AE /* simone-secci-49uySSA678U-unsplash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "simone-secci-49uySSA678U-unsplash.jpg"; path = "../../../../../../../simone-secci-49uySSA678U-unsplash.jpg"; sourceTree = "<group>"; };
-		5B334CCA2535068C008002AE /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Colors.xcassets; path = ../../S07/DemoPickers/DemoPickers/Colors.xcassets; sourceTree = "<group>"; };
+		5B334CC02534F49A008002AE /* annie-spratt-vGgn0xLdy8s-unsplash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "annie-spratt-vGgn0xLdy8s-unsplash.jpg"; sourceTree = "<group>"; };
+		5B334CC12534F49B008002AE /* jason-wong-bYoRZI30nEI-unsplash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "jason-wong-bYoRZI30nEI-unsplash.jpg"; sourceTree = "<group>"; };
+		5B334CC22534F49B008002AE /* simone-secci-49uySSA678U-unsplash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "simone-secci-49uySSA678U-unsplash.jpg"; sourceTree = "<group>"; };
 		5B334CDA2535516A008002AE /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		5B52AA662536209000A5AFDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../ProyectoFinal_iOS/ProyectoFinal_iOS/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5B5F2BBF253638B900D04EE0 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		5BAE0EDE25361CF20093D3F3 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		5BAE0EE025361D290093D3F3 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		5BAE0EE225361D6E0093D3F3 /* GradientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientViewController.swift; sourceTree = "<group>"; };
@@ -76,7 +76,6 @@
 				5B334CA52534F3ED008002AE /* SceneDelegate.swift */,
 				5B334CA72534F3ED008002AE /* ViewController.swift */,
 				5B334CAC2534F3EE008002AE /* Assets.xcassets */,
-				5B334CCA2535068C008002AE /* Colors.xcassets */,
 				5B334CAE2534F3EE008002AE /* LaunchScreen.storyboard */,
 				5B334CB12534F3EE008002AE /* Info.plist */,
 				5B334CDA2535516A008002AE /* RegisterViewController.swift */,
@@ -87,6 +86,7 @@
 				5BAE0EE025361D290093D3F3 /* Colors.swift */,
 				5B52AA652536209000A5AFDB /* Main.storyboard */,
 				5BAE0EE225361D6E0093D3F3 /* GradientViewController.swift */,
+				5B5F2BBF253638B900D04EE0 /* Colors.xcassets */,
 			);
 			path = ProyectoFinaliOS_Parodi;
 			sourceTree = "<group>";
@@ -155,7 +155,7 @@
 				5B52AA672536209000A5AFDB /* Main.storyboard in Resources */,
 				5B334CC42534F49B008002AE /* jason-wong-bYoRZI30nEI-unsplash.jpg in Resources */,
 				5B334CAD2534F3EE008002AE /* Assets.xcassets in Resources */,
-				5B334CCB2535068C008002AE /* Colors.xcassets in Resources */,
+				5B5F2BC0253638B900D04EE0 /* Colors.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
