@@ -37,6 +37,7 @@
 		5B334CDA2535516A008002AE /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		5B52AA662536209000A5AFDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../ProyectoFinal_iOS/ProyectoFinal_iOS/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5B5F2BBF253638B900D04EE0 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		5B5F2BC225363B5600D04EE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = ../../ProyectoFinal_iOS/ProyectoFinal_iOS/en.lproj/Main.strings; sourceTree = "<group>"; };
 		5BAE0EDE25361CF20093D3F3 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		5BAE0EE025361D290093D3F3 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		5BAE0EE225361D6E0093D3F3 /* GradientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientViewController.swift; sourceTree = "<group>"; };
@@ -191,6 +192,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				5B52AA662536209000A5AFDB /* Base */,
+				5B5F2BC225363B5600D04EE0 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
