@@ -30,7 +30,7 @@ class ViewController: UIViewController {
             Auth.auth().signIn(withEmail: usuario, password: password){
               (result, error) in
                 if let result = result, error == nil{
-                    self.navigationController?.pushViewController(HomeViewController(email: result.user.email!, provider: .basic), animated: true)
+                    self.navigationController?.pushViewController(HomeViewController(email: result.user.email!), animated: true)
                 } else{
                     let alertController = UIAlertController(title: "Error", message: "Se ha producido un error al iniciar sesion", preferredStyle: .alert)
                     alertController.addAction(UIAlertAction(title: "Aceptar", style: .default))

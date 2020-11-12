@@ -9,7 +9,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="ProyectoFinaliOS_Parodi" customModuleProvider="target">
             <connections>
-                <outlet property="providerPass" destination="7gC-Q0-kIa" id="nZ5-Ku-mlS"/>
                 <outlet property="user" destination="5kh-w2-oto" id="9ma-aJ-Kxy"/>
                 <outlet property="view" destination="iN0-l3-epB" id="77w-EE-RkX"/>
             </connections>
@@ -20,27 +19,20 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="94r-ZM-IxO">
-                    <rect key="frame" x="16" y="60" width="382" height="106"/>
+                    <rect key="frame" x="16" y="60" width="382" height="49"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5kh-w2-oto">
-                            <rect key="frame" x="0.0" y="0.0" width="382" height="30"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bienvenido a la pagina principal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pR4-wt-JFH">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="20.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Provider" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gC-Q0-kIa">
-                            <rect key="frame" x="0.0" y="38" width="382" height="30"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5kh-w2-oto">
+                            <rect key="frame" x="0.0" y="28.5" width="382" height="20.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Stk-0Y-akp">
-                            <rect key="frame" x="0.0" y="76" width="382" height="30"/>
-                            <state key="normal" title="Cerrar sesion"/>
-                            <connections>
-                                <action selector="btnCloseSesion:" destination="-1" eventType="touchUpInside" id="k54-39-HHq"/>
-                            </connections>
-                        </button>
                     </subviews>
                 </stackView>
             </subviews>

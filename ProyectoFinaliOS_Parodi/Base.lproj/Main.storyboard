@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -47,7 +48,7 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Usuario" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3T0-m3-ydk">
+                                    <textField opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correo electronico" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3T0-m3-ydk">
                                         <rect key="frame" x="40" y="102" width="294" height="40"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -68,7 +69,7 @@
                                         </constraints>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w6b-O5-Evn">
                                         <rect key="frame" x="40" y="222" width="294" height="50"/>
@@ -315,48 +316,43 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre de usuario" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="igQ-XK-zaq">
+                                    <textField opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correo electronico" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="igQ-XK-zaq">
                                         <rect key="frame" x="20" y="162" width="374" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombres" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DzW-eF-bxN">
+                                    <textField opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombres" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DzW-eF-bxN">
                                         <rect key="frame" x="20" y="206" width="374" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Apellidos" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qJR-sP-PCJ">
+                                    <textField opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Apellidos" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qJR-sP-PCJ">
                                         <rect key="frame" x="20" y="250" width="374" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A5R-82-hYY">
+                                    <textField opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A5R-82-hYY">
                                         <rect key="frame" x="20" y="294" width="374" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirmar contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ksI-w7-FQP">
+                                    <textField opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirmar contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ksI-w7-FQP">
                                         <rect key="frame" x="20" y="338" width="374" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correo electrónico" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HuM-je-x93">
+                                    <textField opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Fecha de Nacimiento" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="38P-78-4X7">
                                         <rect key="frame" x="20" y="382" width="374" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Fecha de Nacimiento" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="38P-78-4X7">
+                                    <textField opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Carrera" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XZy-Fp-b6E">
                                         <rect key="frame" x="20" y="426" width="374" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Carrera" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XZy-Fp-b6E">
-                                        <rect key="frame" x="20" y="470" width="374" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SFJ-lu-pXV">
-                                        <rect key="frame" x="20" y="524" width="374" height="50"/>
+                                        <rect key="frame" x="20" y="480" width="374" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="5ri-Zk-rsZ"/>
                                         </constraints>
@@ -369,45 +365,43 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <color key="backgroundColor" name="Black_50"/>
                                 <constraints>
-                                    <constraint firstItem="38P-78-4X7" firstAttribute="trailing" secondItem="HuM-je-x93" secondAttribute="trailing" id="0Um-6i-3Dw"/>
                                     <constraint firstItem="ksI-w7-FQP" firstAttribute="leading" secondItem="A5R-82-hYY" secondAttribute="leading" id="2cK-bm-bYY"/>
                                     <constraint firstAttribute="trailing" secondItem="BDp-E9-4qc" secondAttribute="trailing" id="4X2-A4-Dnh"/>
                                     <constraint firstItem="XZy-Fp-b6E" firstAttribute="trailing" secondItem="38P-78-4X7" secondAttribute="trailing" id="70F-NB-hja"/>
                                     <constraint firstItem="igQ-XK-zaq" firstAttribute="trailing" secondItem="0ph-Hb-s7r" secondAttribute="trailing" id="AYw-s6-Ovb"/>
                                     <constraint firstItem="A5R-82-hYY" firstAttribute="trailing" secondItem="qJR-sP-PCJ" secondAttribute="trailing" id="CDr-dk-Syz"/>
-                                    <constraint firstItem="38P-78-4X7" firstAttribute="leading" secondItem="HuM-je-x93" secondAttribute="leading" id="E73-4A-0V3"/>
+                                    <constraint firstAttribute="trailing" secondItem="38P-78-4X7" secondAttribute="trailing" constant="20" id="ECy-ay-vek"/>
                                     <constraint firstItem="XZy-Fp-b6E" firstAttribute="leading" secondItem="38P-78-4X7" secondAttribute="leading" id="EY3-cm-dRD"/>
                                     <constraint firstItem="ksI-w7-FQP" firstAttribute="top" secondItem="A5R-82-hYY" secondAttribute="bottom" constant="10" id="F0z-DC-kDK"/>
                                     <constraint firstItem="DzW-eF-bxN" firstAttribute="top" secondItem="igQ-XK-zaq" secondAttribute="bottom" constant="10" id="G4f-QI-pa0"/>
                                     <constraint firstItem="BDp-E9-4qc" firstAttribute="width" secondItem="xbT-VL-Ylc" secondAttribute="width" id="KiS-qS-cun"/>
                                     <constraint firstItem="igQ-XK-zaq" firstAttribute="top" secondItem="0ph-Hb-s7r" secondAttribute="bottom" constant="20" id="NxC-RF-9ne"/>
+                                    <constraint firstItem="38P-78-4X7" firstAttribute="top" secondItem="ksI-w7-FQP" secondAttribute="bottom" constant="10" id="Pdb-oF-5M8"/>
                                     <constraint firstItem="0ph-Hb-s7r" firstAttribute="trailing" secondItem="ZHo-IX-XXE" secondAttribute="trailing" id="PiE-Va-5mi"/>
                                     <constraint firstItem="SFJ-lu-pXV" firstAttribute="trailing" secondItem="XZy-Fp-b6E" secondAttribute="trailing" id="QFY-ti-8km"/>
                                     <constraint firstItem="SFJ-lu-pXV" firstAttribute="top" secondItem="XZy-Fp-b6E" secondAttribute="bottom" constant="20" id="ShE-Lp-ACK"/>
                                     <constraint firstAttribute="bottom" secondItem="SFJ-lu-pXV" secondAttribute="bottom" constant="20" id="TfE-wH-Y3A"/>
-                                    <constraint firstItem="38P-78-4X7" firstAttribute="top" secondItem="HuM-je-x93" secondAttribute="bottom" constant="10" id="VCK-mG-lUA"/>
                                     <constraint firstItem="BDp-E9-4qc" firstAttribute="leading" secondItem="xbT-VL-Ylc" secondAttribute="leading" id="XWE-FG-XgK"/>
                                     <constraint firstItem="qJR-sP-PCJ" firstAttribute="leading" secondItem="DzW-eF-bxN" secondAttribute="leading" id="b1f-Vl-YTF"/>
                                     <constraint firstItem="ksI-w7-FQP" firstAttribute="trailing" secondItem="A5R-82-hYY" secondAttribute="trailing" id="b3G-Rc-hlf"/>
                                     <constraint firstItem="qJR-sP-PCJ" firstAttribute="top" secondItem="DzW-eF-bxN" secondAttribute="bottom" constant="10" id="bvB-FX-kVO"/>
                                     <constraint firstItem="XZy-Fp-b6E" firstAttribute="top" secondItem="38P-78-4X7" secondAttribute="bottom" constant="10" id="dkG-sW-ki2"/>
                                     <constraint firstAttribute="trailing" secondItem="ZHo-IX-XXE" secondAttribute="trailing" constant="20" id="eSM-Om-N6f"/>
-                                    <constraint firstItem="HuM-je-x93" firstAttribute="leading" secondItem="ksI-w7-FQP" secondAttribute="leading" id="goV-Wk-Vte"/>
                                     <constraint firstItem="0ph-Hb-s7r" firstAttribute="leading" secondItem="ZHo-IX-XXE" secondAttribute="leading" id="hes-So-5ug"/>
                                     <constraint firstItem="BDp-E9-4qc" firstAttribute="top" secondItem="xbT-VL-Ylc" secondAttribute="top" id="i1i-1D-wSd"/>
                                     <constraint firstItem="ZHo-IX-XXE" firstAttribute="top" secondItem="BDp-E9-4qc" secondAttribute="bottom" constant="50" id="iMy-rA-WfT"/>
                                     <constraint firstItem="A5R-82-hYY" firstAttribute="top" secondItem="qJR-sP-PCJ" secondAttribute="bottom" constant="10" id="jKF-Bc-M8i"/>
                                     <constraint firstItem="A5R-82-hYY" firstAttribute="leading" secondItem="qJR-sP-PCJ" secondAttribute="leading" id="mWz-16-b8R"/>
                                     <constraint firstItem="ZHo-IX-XXE" firstAttribute="leading" secondItem="xbT-VL-Ylc" secondAttribute="leading" constant="20" id="oKf-m5-c72"/>
-                                    <constraint firstItem="HuM-je-x93" firstAttribute="trailing" secondItem="ksI-w7-FQP" secondAttribute="trailing" id="ogR-fJ-UMg"/>
                                     <constraint firstItem="qJR-sP-PCJ" firstAttribute="trailing" secondItem="DzW-eF-bxN" secondAttribute="trailing" id="qqG-cI-oJ6"/>
                                     <constraint firstItem="DzW-eF-bxN" firstAttribute="leading" secondItem="igQ-XK-zaq" secondAttribute="leading" id="rYh-YF-Psa"/>
                                     <constraint firstItem="igQ-XK-zaq" firstAttribute="leading" secondItem="0ph-Hb-s7r" secondAttribute="leading" id="sgy-57-tK9"/>
                                     <constraint firstItem="0ph-Hb-s7r" firstAttribute="top" secondItem="ZHo-IX-XXE" secondAttribute="bottom" constant="10" id="tZD-bN-Nqh"/>
                                     <constraint firstItem="SFJ-lu-pXV" firstAttribute="leading" secondItem="XZy-Fp-b6E" secondAttribute="leading" id="wD3-ho-Ca0"/>
                                     <constraint firstItem="DzW-eF-bxN" firstAttribute="trailing" secondItem="igQ-XK-zaq" secondAttribute="trailing" id="wa4-3W-Zuy"/>
-                                    <constraint firstItem="HuM-je-x93" firstAttribute="top" secondItem="ksI-w7-FQP" secondAttribute="bottom" constant="10" id="x02-sl-unX"/>
+                                    <constraint firstItem="38P-78-4X7" firstAttribute="leading" secondItem="xbT-VL-Ylc" secondAttribute="leading" constant="20" id="xaR-Qy-j5a"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -435,7 +429,6 @@
                         <outlet property="txtAge" destination="38P-78-4X7" id="4wD-2u-8TE"/>
                         <outlet property="txtCarrer" destination="XZy-Fp-b6E" id="Qqi-QY-yPa"/>
                         <outlet property="txtConfirmPassword" destination="ksI-w7-FQP" id="nfs-lY-KDA"/>
-                        <outlet property="txtEmail" destination="HuM-je-x93" id="Na4-rc-YXM"/>
                         <outlet property="txtLastNames" destination="qJR-sP-PCJ" id="IqF-Mb-kU8"/>
                         <outlet property="txtNames" destination="DzW-eF-bxN" id="qnL-NP-OQa"/>
                         <outlet property="txtPassword" destination="A5R-82-hYY" id="f7T-nq-ity"/>
@@ -456,5 +449,8 @@
         <image name="annie-spratt-vGgn0xLdy8s-unsplash" width="5304" height="7952"/>
         <image name="jason-wong-bYoRZI30nEI-unsplash" width="6000" height="4000"/>
         <image name="simone-secci-49uySSA678U-unsplash" width="2873" height="3831"/>
+        <namedColor name="Black_50">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

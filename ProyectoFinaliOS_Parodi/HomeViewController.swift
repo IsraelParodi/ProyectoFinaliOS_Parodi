@@ -8,23 +8,14 @@
 
 import UIKit
 
-enum ProviderType: String{
-    case basic
-}
-
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var user: UILabel!
-    @IBOutlet weak var providerPass: UILabel!
-    @IBAction func btnCloseSesion(_ sender: Any) {
-    }
     
     private let email: String
-    private let provider: ProviderType
     
-    init(email: String, provider: ProviderType){
+    init(email: String){
         self.email = email
-        self.provider = provider
         super.init(nibName: nil, bundle:nil)
     }
     
@@ -38,6 +29,5 @@ class HomeViewController: UIViewController {
         title = "Home"
         
         user.text = email
-        providerPass.text = provider.rawValue
     }
 }
