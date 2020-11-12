@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class RegisterViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
    
@@ -18,6 +20,7 @@ class RegisterViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     @IBOutlet weak var txtLastNames: UITextField!
     @IBOutlet weak var txtNames: UITextField!
     @IBOutlet weak var txtUser: UITextField!
+
     
     let datePicker = UIDatePicker()
     
@@ -189,6 +192,20 @@ class RegisterViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
            }else {
                txtCarrer.layer.borderColor = UIColor.white.cgColor
            }
+        
+        if let usuario = txtUser.text, let password = txtPassword.text{
+            Auth.auth().createUser(withEmail: usuario, password: password){
+              (result, error) in
+                if let result = result, error == nil{
+                    self.navigationController?.pushViewController(HomeViewController(email: result.user.email!, provider: .basic), animated: true)
+                } else{
+                    let alertController = UIAlertController(title: "Error", message: "Se ha producido un error al registrar el usuario", preferredStyle: .alert)
+                    alertController.addAction(UIAlertAction(title: "Aceptar", style: .default))
+                    
+                    self.present(alertController, animated: true, completion: nil)
+                }
+            }
+        }
            
        }
 }

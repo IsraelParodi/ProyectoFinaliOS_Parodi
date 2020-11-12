@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FirebaseAnalytics
+import FirebaseAuth
 
 class ViewController: UIViewController {
     @IBAction func btnLogin(_ sender: Any) {
@@ -23,6 +25,20 @@ class ViewController: UIViewController {
         }else {
             txtPassword.layer.borderColor = UIColor.white.cgColor
         }
+        
+        if let usuario = txtUsuario.text, let password = txtPassword.text{
+            Auth.auth().signIn(withEmail: usuario, password: password){
+              (result, error) in
+                if let result = result, error == nil{
+                    self.navigationController?.pushViewController(HomeViewController(email: result.user.email!, provider: .basic), animated: true)
+                } else{
+                    let alertController = UIAlertController(title: "Error", message: "Se ha producido un error al iniciar sesion", preferredStyle: .alert)
+                    alertController.addAction(UIAlertAction(title: "Aceptar", style: .default))
+                    
+                    self.present(alertController, animated: true, completion: nil)
+                }
+            }
+        }
     }
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var txtUsuario: UITextField!
@@ -34,14 +50,11 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
         buttonIniciarSesion.layer.cornerRadius = 25.0
         buttonIniciarSesion.layer.masksToBounds = true
         buttonIniciarSesion.setGradientBackground(colorOne: Colors.brightOrange, colorTwo: Colors.red)
         
-       
-        
+        Analytics.logEvent("initScreen", parameters: ["message":"Integracion de firebase completa"])
     }
     
     func errorStyle(toInput input: UITextField){

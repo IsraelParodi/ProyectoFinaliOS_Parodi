@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,15 +12,16 @@
 		5B334CA82534F3ED008002AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B334CA72534F3ED008002AE /* ViewController.swift */; };
 		5B334CAD2534F3EE008002AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B334CAC2534F3EE008002AE /* Assets.xcassets */; };
 		5B334CB02534F3EE008002AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B334CAE2534F3EE008002AE /* LaunchScreen.storyboard */; };
-		5B334CC32534F49B008002AE /* annie-spratt-vGgn0xLdy8s-unsplash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5B334CC02534F49A008002AE /* annie-spratt-vGgn0xLdy8s-unsplash.jpg */; };
-		5B334CC42534F49B008002AE /* jason-wong-bYoRZI30nEI-unsplash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5B334CC12534F49B008002AE /* jason-wong-bYoRZI30nEI-unsplash.jpg */; };
-		5B334CC52534F49B008002AE /* simone-secci-49uySSA678U-unsplash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5B334CC22534F49B008002AE /* simone-secci-49uySSA678U-unsplash.jpg */; };
 		5B334CDB2535516A008002AE /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B334CDA2535516A008002AE /* RegisterViewController.swift */; };
 		5B5F2BC0253638B900D04EE0 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B5F2BBF253638B900D04EE0 /* Colors.xcassets */; };
-		5B5F2BC425363DAE00D04EE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B5F2BC325363DAE00D04EE0 /* Main.storyboard */; };
+		5B91ACB2255D8FB300C1A408 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B91ACB0255D8FB300C1A408 /* Main.storyboard */; };
+		5B91ACB4255DBEB700C1A408 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B91ACB3255DBEB700C1A408 /* GoogleService-Info.plist */; };
+		5B91ACB6255DC19600C1A408 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B91ACB5255DC19600C1A408 /* HomeViewController.swift */; };
+		5B91ACB8255DCD5500C1A408 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B91ACB7255DCD5400C1A408 /* HomeViewController.xib */; };
 		5BAE0EDF25361CF20093D3F3 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAE0EDE25361CF20093D3F3 /* ForgotPasswordViewController.swift */; };
 		5BAE0EE125361D290093D3F3 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAE0EE025361D290093D3F3 /* Colors.swift */; };
 		5BAE0EE325361D6E0093D3F3 /* GradientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAE0EE225361D6E0093D3F3 /* GradientViewController.swift */; };
+		E193C978D2DAD50B04022AAA /* Pods_ProyectoFinaliOS_Parodi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99084B2E85307A0AA20809D /* Pods_ProyectoFinaliOS_Parodi.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,15 +32,18 @@
 		5B334CAC2534F3EE008002AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B334CAF2534F3EE008002AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B334CB12534F3EE008002AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5B334CC02534F49A008002AE /* annie-spratt-vGgn0xLdy8s-unsplash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "annie-spratt-vGgn0xLdy8s-unsplash.jpg"; sourceTree = "<group>"; };
-		5B334CC12534F49B008002AE /* jason-wong-bYoRZI30nEI-unsplash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "jason-wong-bYoRZI30nEI-unsplash.jpg"; sourceTree = "<group>"; };
-		5B334CC22534F49B008002AE /* simone-secci-49uySSA678U-unsplash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "simone-secci-49uySSA678U-unsplash.jpg"; sourceTree = "<group>"; };
 		5B334CDA2535516A008002AE /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		5B5F2BBF253638B900D04EE0 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
-		5B5F2BC325363DAE00D04EE0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5B91ACB1255D8FB300C1A408 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5B91ACB3255DBEB700C1A408 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5B91ACB5255DC19600C1A408 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5B91ACB7255DCD5400C1A408 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		5BAE0EDE25361CF20093D3F3 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		5BAE0EE025361D290093D3F3 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		5BAE0EE225361D6E0093D3F3 /* GradientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientViewController.swift; sourceTree = "<group>"; };
+		90B5B179E059F5A5C4233FFB /* Pods-ProyectoFinaliOS_Parodi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProyectoFinaliOS_Parodi.release.xcconfig"; path = "Target Support Files/Pods-ProyectoFinaliOS_Parodi/Pods-ProyectoFinaliOS_Parodi.release.xcconfig"; sourceTree = "<group>"; };
+		C99084B2E85307A0AA20809D /* Pods_ProyectoFinaliOS_Parodi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProyectoFinaliOS_Parodi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDA0C72FE77D099E38985B2B /* Pods-ProyectoFinaliOS_Parodi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProyectoFinaliOS_Parodi.debug.xcconfig"; path = "Target Support Files/Pods-ProyectoFinaliOS_Parodi/Pods-ProyectoFinaliOS_Parodi.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,17 +51,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E193C978D2DAD50B04022AAA /* Pods_ProyectoFinaliOS_Parodi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0FACE768B040AFBF67097C90 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C99084B2E85307A0AA20809D /* Pods_ProyectoFinaliOS_Parodi.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5B334C972534F3ED008002AE = {
 			isa = PBXGroup;
 			children = (
 				5B334CA22534F3ED008002AE /* ProyectoFinaliOS_Parodi */,
 				5B334CA12534F3ED008002AE /* Products */,
+				EC10A002B1DE9F81596A4011 /* Pods */,
+				0FACE768B040AFBF67097C90 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +87,8 @@
 		5B334CA22534F3ED008002AE /* ProyectoFinaliOS_Parodi */ = {
 			isa = PBXGroup;
 			children = (
+				5B91ACB3255DBEB700C1A408 /* GoogleService-Info.plist */,
+				5B91ACB0255D8FB300C1A408 /* Main.storyboard */,
 				5B334CA32534F3ED008002AE /* AppDelegate.swift */,
 				5B334CA52534F3ED008002AE /* SceneDelegate.swift */,
 				5B334CA72534F3ED008002AE /* ViewController.swift */,
@@ -79,16 +96,23 @@
 				5B334CAE2534F3EE008002AE /* LaunchScreen.storyboard */,
 				5B334CB12534F3EE008002AE /* Info.plist */,
 				5B334CDA2535516A008002AE /* RegisterViewController.swift */,
-				5B334CC02534F49A008002AE /* annie-spratt-vGgn0xLdy8s-unsplash.jpg */,
-				5B334CC12534F49B008002AE /* jason-wong-bYoRZI30nEI-unsplash.jpg */,
-				5B334CC22534F49B008002AE /* simone-secci-49uySSA678U-unsplash.jpg */,
 				5BAE0EDE25361CF20093D3F3 /* ForgotPasswordViewController.swift */,
 				5BAE0EE025361D290093D3F3 /* Colors.swift */,
-				5B5F2BC325363DAE00D04EE0 /* Main.storyboard */,
 				5BAE0EE225361D6E0093D3F3 /* GradientViewController.swift */,
 				5B5F2BBF253638B900D04EE0 /* Colors.xcassets */,
+				5B91ACB5255DC19600C1A408 /* HomeViewController.swift */,
+				5B91ACB7255DCD5400C1A408 /* HomeViewController.xib */,
 			);
 			path = ProyectoFinaliOS_Parodi;
+			sourceTree = "<group>";
+		};
+		EC10A002B1DE9F81596A4011 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FDA0C72FE77D099E38985B2B /* Pods-ProyectoFinaliOS_Parodi.debug.xcconfig */,
+				90B5B179E059F5A5C4233FFB /* Pods-ProyectoFinaliOS_Parodi.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,9 +122,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B334CB42534F3EE008002AE /* Build configuration list for PBXNativeTarget "ProyectoFinaliOS_Parodi" */;
 			buildPhases = (
+				B66B0ACE39A378B8773F377F /* [CP] Check Pods Manifest.lock */,
 				5B334C9C2534F3ED008002AE /* Sources */,
 				5B334C9D2534F3ED008002AE /* Frameworks */,
 				5B334C9E2534F3ED008002AE /* Resources */,
+				FEB1DE6515A1E7AE6C1CD511 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,17 +175,58 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B334CC32534F49B008002AE /* annie-spratt-vGgn0xLdy8s-unsplash.jpg in Resources */,
 				5B334CB02534F3EE008002AE /* LaunchScreen.storyboard in Resources */,
-				5B334CC52534F49B008002AE /* simone-secci-49uySSA678U-unsplash.jpg in Resources */,
-				5B5F2BC425363DAE00D04EE0 /* Main.storyboard in Resources */,
-				5B334CC42534F49B008002AE /* jason-wong-bYoRZI30nEI-unsplash.jpg in Resources */,
 				5B334CAD2534F3EE008002AE /* Assets.xcassets in Resources */,
+				5B91ACB4255DBEB700C1A408 /* GoogleService-Info.plist in Resources */,
 				5B5F2BC0253638B900D04EE0 /* Colors.xcassets in Resources */,
+				5B91ACB2255D8FB300C1A408 /* Main.storyboard in Resources */,
+				5B91ACB8255DCD5500C1A408 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B66B0ACE39A378B8773F377F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ProyectoFinaliOS_Parodi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEB1DE6515A1E7AE6C1CD511 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProyectoFinaliOS_Parodi/Pods-ProyectoFinaliOS_Parodi-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProyectoFinaliOS_Parodi/Pods-ProyectoFinaliOS_Parodi-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ProyectoFinaliOS_Parodi/Pods-ProyectoFinaliOS_Parodi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5B334C9C2534F3ED008002AE /* Sources */ = {
@@ -169,6 +236,7 @@
 				5B334CDB2535516A008002AE /* RegisterViewController.swift in Sources */,
 				5BAE0EDF25361CF20093D3F3 /* ForgotPasswordViewController.swift in Sources */,
 				5BAE0EE125361D290093D3F3 /* Colors.swift in Sources */,
+				5B91ACB6255DC19600C1A408 /* HomeViewController.swift in Sources */,
 				5BAE0EE325361D6E0093D3F3 /* GradientViewController.swift in Sources */,
 				5B334CA82534F3ED008002AE /* ViewController.swift in Sources */,
 				5B334CA42534F3ED008002AE /* AppDelegate.swift in Sources */,
@@ -185,6 +253,14 @@
 				5B334CAF2534F3EE008002AE /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5B91ACB0255D8FB300C1A408 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B91ACB1255D8FB300C1A408 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -306,6 +382,7 @@
 		};
 		5B334CB52534F3EE008002AE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDA0C72FE77D099E38985B2B /* Pods-ProyectoFinaliOS_Parodi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -323,6 +400,7 @@
 		};
 		5B334CB62534F3EE008002AE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90B5B179E059F5A5C4233FFB /* Pods-ProyectoFinaliOS_Parodi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

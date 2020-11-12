@@ -31,7 +31,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jason-wong-bYoRZI30nEI-unsplash.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="2m3-PP-BNF">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jason-wong-bYoRZI30nEI-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="2m3-PP-BNF">
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                             </imageView>
                             <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PAh-KQ-9Fb">
@@ -66,7 +66,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="EsC-Et-HbC"/>
                                         </constraints>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -174,7 +174,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="simone-secci-49uySSA678U-unsplash.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="aab-RA-VIg">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="simone-secci-49uySSA678U-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="aab-RA-VIg">
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                             </imageView>
                             <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fFI-Ni-mPb">
@@ -268,6 +268,7 @@
                         <outlet property="buttonSendForgotPassword" destination="9cB-Z3-MuU" id="HCZ-kb-ThX"/>
                         <outlet property="constraintCenterYView" destination="qx2-WS-T45" id="j8x-nw-jgf"/>
                         <outlet property="txtForgotPassword" destination="Wa7-WO-xgI" id="wee-di-qht"/>
+                        <outlet property="txtUsuario" destination="Wa7-WO-xgI" id="URe-yx-Gxx"/>
                         <outlet property="viewContent" destination="UQZ-50-zTL" id="6hk-iR-fJR"/>
                     </connections>
                 </viewController>
@@ -289,7 +290,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="annie-spratt-vGgn0xLdy8s-unsplash.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Qwe-tZ-H30">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="annie-spratt-vGgn0xLdy8s-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="Qwe-tZ-H30">
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xbT-VL-Ylc">
@@ -452,8 +453,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="annie-spratt-vGgn0xLdy8s-unsplash.jpg" width="5304" height="7952"/>
-        <image name="jason-wong-bYoRZI30nEI-unsplash.jpg" width="6000" height="4000"/>
-        <image name="simone-secci-49uySSA678U-unsplash.jpg" width="2873" height="3831"/>
+        <image name="annie-spratt-vGgn0xLdy8s-unsplash" width="5304" height="7952"/>
+        <image name="jason-wong-bYoRZI30nEI-unsplash" width="6000" height="4000"/>
+        <image name="simone-secci-49uySSA678U-unsplash" width="2873" height="3831"/>
     </resources>
 </document>
