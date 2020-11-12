@@ -11,6 +11,13 @@ import FirebaseAnalytics
 import FirebaseAuth
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var txtPassword: UITextField!
+    @IBOutlet weak var txtUsuario: UITextField!
+    @IBOutlet weak var viewContent: UIView!
+    @IBOutlet weak var constraintCenterYViewContent: NSLayoutConstraint!
+    @IBOutlet weak var buttonIniciarSesion: UIButton!
+    
     @IBAction func btnLogin(_ sender: Any) {
         if txtUsuario.text == "" {
             txtUsuario.placeholder = "INGRESA TU USUARIO"
@@ -40,13 +47,6 @@ class ViewController: UIViewController {
             }
         }
     }
-    @IBOutlet weak var txtPassword: UITextField!
-    @IBOutlet weak var txtUsuario: UITextField!
-    
-    @IBOutlet weak var viewContent: UIView!
-    @IBOutlet weak var constraintCenterYViewContent: NSLayoutConstraint!
-    
-    @IBOutlet weak var buttonIniciarSesion: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -83,7 +83,6 @@ class ViewController: UIViewController {
                                                object: nil)
     }
     
-    
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         NotificationCenter.default.removeObserver(self)
@@ -93,7 +92,7 @@ class ViewController: UIViewController {
         
         let keyboardFrame = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect ?? .zero
         let animationDuration = notification.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? Double ?? 0
-        
+
         let keyboardOriginY = keyboardFrame.origin.y
         let finalPosYViewContent = self.viewContent.frame.origin.y + self.viewContent.frame.height
         
@@ -107,7 +106,6 @@ class ViewController: UIViewController {
         UIView.animate(withDuration: animationDuration) {
             self.constraintCenterYViewContent.constant = delta
             self.view.layoutIfNeeded()
-            
         }
         
     }
@@ -119,10 +117,6 @@ class ViewController: UIViewController {
         UIView.animate(withDuration: animationDuration) {
             self.constraintCenterYViewContent.constant = 0
             self.view.layoutIfNeeded()
-            
         }
     }
-
-
 }
-

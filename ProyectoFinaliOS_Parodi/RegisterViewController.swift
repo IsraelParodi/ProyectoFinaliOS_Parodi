@@ -21,14 +21,13 @@ class RegisterViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     @IBOutlet weak var txtNames: UITextField!
     @IBOutlet weak var txtUser: UITextField!
 
+    @IBOutlet weak var constraintBottomScroll: NSLayoutConstraint!
+    @IBOutlet weak var buttonRegister: UIButton!
     
     let datePicker = UIDatePicker()
     
     var selectedCountry: String?
     var countryList = ["Diseño Gráfico", "Diseño de interiores", "Animación Digital", "Comunicación audiovisual", "Administración", "Desarrollo de Software"]
-    
-    @IBOutlet weak var constraintBottomScroll: NSLayoutConstraint!
-    @IBOutlet weak var buttonRegister: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -199,7 +198,6 @@ class RegisterViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
                 }
             }
         }
-           
-       }
+    }
 }
 
