@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>52976328295-5g0m7nb8scjpt2d4pq7lrim4fd209hd7.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.52976328295-5g0m7nb8scjpt2d4pq7lrim4fd209hd7</string>
+	<key>API_KEY</key>
+	<string>AIzaSyB_Illm4-zj_RL03k8ACsrK0tX7xP0Ukl4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>52976328295</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>pe.isil.ProyectoFinaliOS-Parodi</string>
+	<key>PROJECT_ID</key>
+	<string>proyectoios-1c3b2</string>
+	<key>STORAGE_BUCKET</key>
+	<string>proyectoios-1c3b2.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:52976328295:ios:939555a004467ecfa33ec2</string>
+	<key>DATABASE_URL</key>
+	<string>https://proyectoios-1c3b2.firebaseio.com</string>
+</dict>
+</plist>
