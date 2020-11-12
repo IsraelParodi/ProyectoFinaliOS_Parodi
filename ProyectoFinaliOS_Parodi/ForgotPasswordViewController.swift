@@ -7,14 +7,31 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class ForgotPasswordViewController: UIViewController {
+    @IBOutlet weak var txtUsuario: UITextField!
     @IBAction func btnForgotPassword(_ sender: Any) {
         if txtForgotPassword.text == "" {
-            txtForgotPassword.placeholder = "INGRESA TU USUARIO O CONTRASEÑA"
+            txtForgotPassword.placeholder = "INGRESA TU CORREO ELECTRONICO"
             self.errorStyle(toInput: self.txtForgotPassword)
         }else {
             txtForgotPassword.layer.borderColor = UIColor.white.cgColor
+        }
+        
+        if let usuario = txtUsuario.text{
+            Auth.auth().sendPasswordReset(withEmail: usuario){
+              (error) in
+                if let error = error{
+                    let alertController = UIAlertController(title: "Error", message: "Se ha producido al reestablecer la contraseña", preferredStyle: .alert)
+                    alertController.addAction(UIAlertAction(title: "Aceptar", style: .default))
+                    
+                    self.present(alertController, animated: true, completion: nil)
+                }
+                let alert = UIAlertController(title: "Perfecto", message: "El correo de cambio de usuario ha sido enviado", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Aceptar", style: .default))
+                self.present(alert,animated: true, completion: nil)
+            }
         }
     }
     @IBOutlet weak var txtForgotPassword: UITextField!
