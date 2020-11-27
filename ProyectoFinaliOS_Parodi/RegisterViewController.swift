@@ -189,7 +189,6 @@ class RegisterViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
             Auth.auth().createUser(withEmail: usuario, password: password){
               (result, error) in
                 if let result = result, error == nil{
-                    self.navigationController?.pushViewController(HomeViewController(email: result.user.email!), animated: true)
                 } else{
                     let alertController = UIAlertController(title: "Error", message: "Se ha producido un error al registrar el usuario", preferredStyle: .alert)
                     alertController.addAction(UIAlertAction(title: "Aceptar", style: .default))

@@ -2,32 +2,30 @@
 //  HomeViewController.swift
 //  ProyectoFinaliOS_Parodi
 //
-//  Created by Israel Parodi Schmidt on 11/12/20.
+//  Created by Israel Parodi Schmidt on 11/27/20.
 //  Copyright © 2020 Israel Parodi Schmidt. All rights reserved.
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+import SwiftKeychainWrapper
 
 class HomeViewController: UIViewController {
 
-    @IBOutlet weak var user: UILabel!
-    
-    private let email: String
-    
-    init(email: String){
-        self.email = email
-        super.init(nibName: nil, bundle:nil)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        title = "Home"
-        
-        user.text = email
+
+        // Do any additional setup after loading the view.
+    }
+    
+
+    @IBAction func btnSignOut(_ sender: Any) {
+        KeychainWrapper.standard.removeObject(forKey: "uid")
+        do{
+            try Auth.auth().signOut()
+        } catch let signOutError as NSError{
+            print("Error", signOutError)
+        }
     }
 }

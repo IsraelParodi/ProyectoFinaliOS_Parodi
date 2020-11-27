@@ -9,6 +9,8 @@
 import UIKit
 import FirebaseAnalytics
 import FirebaseAuth
+import FirebaseDatabase
+import SwiftKeychainWrapper
 
 class ViewController: UIViewController {
     
@@ -17,6 +19,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var viewContent: UIView!
     @IBOutlet weak var constraintCenterYViewContent: NSLayoutConstraint!
     @IBOutlet weak var buttonIniciarSesion: UIButton!
+    
+    let ref = Database.database().reference()
     
     @IBAction func btnLogin(_ sender: Any) {
         if txtUsuario.text == "" {
@@ -35,14 +39,17 @@ class ViewController: UIViewController {
         
         if let usuario = txtUsuario.text, let password = txtPassword.text{
             Auth.auth().signIn(withEmail: usuario, password: password){
-              (result, error) in
-                if let result = result, error == nil{
-                    self.navigationController?.pushViewController(HomeViewController(email: result.user.email!), animated: true)
-                } else{
+              (user, error) in
+                if error != nil{
                     let alertController = UIAlertController(title: "Error", message: "Se ha producido un error al iniciar sesion", preferredStyle: .alert)
                     alertController.addAction(UIAlertAction(title: "Aceptar", style: .default))
                     
                     self.present(alertController, animated: true, completion: nil)
+                } else{
+                    if let userID = user?.user.uid{
+                        KeychainWrapper.standard.set((userID), forKey: "uid")
+                        self.performSegue(withIdentifier: "toFeed", sender: nil)
+                    }
                 }
             }
         }
@@ -55,6 +62,16 @@ class ViewController: UIViewController {
         buttonIniciarSesion.setGradientBackground(colorOne: Colors.brightOrange, colorTwo: Colors.red)
         
         Analytics.logEvent("initScreen", parameters: ["message":"Integracion de firebase completa"])
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if let _ = KeychainWrapper.standard.string(forKey: "uid"){
+            self.performSegue(withIdentifier: "toFeed", sender: nil)
+        }
+    }
+    
+    func storeUserData(userId: String){
+        self.ref.child("users").child(userId).setValue(["username":txtUsuario.text])
     }
     
     func errorStyle(toInput input: UITextField){

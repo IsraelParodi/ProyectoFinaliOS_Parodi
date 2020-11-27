@@ -9,5 +9,7 @@ target 'ProyectoFinaliOS_Parodi' do
 
   pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+  pod 'SwiftKeychainWrapper'
 
 end
