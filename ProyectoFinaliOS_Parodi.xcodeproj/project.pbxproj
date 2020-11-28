@@ -14,7 +14,12 @@
 		5B334CB02534F3EE008002AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B334CAE2534F3EE008002AE /* LaunchScreen.storyboard */; };
 		5B334CDB2535516A008002AE /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B334CDA2535516A008002AE /* RegisterViewController.swift */; };
 		5B54A1B225715EBC00AE1D54 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B54A1B125715EBC00AE1D54 /* HomeViewController.swift */; };
+		5B54A1B62571674700AE1D54 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B54A1B52571674700AE1D54 /* PostTableViewCell.swift */; };
+		5B54A1B825716F9F00AE1D54 /* PostBE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B54A1B725716F9F00AE1D54 /* PostBE.swift */; };
+		5B54A1BA257173C900AE1D54 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B54A1B9257173C900AE1D54 /* PostViewController.swift */; };
 		5B5F2BC0253638B900D04EE0 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B5F2BBF253638B900D04EE0 /* Colors.xcassets */; };
+		5B79A3522571F9D50096D939 /* ImageDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B79A3512571F9D50096D939 /* ImageDownload.swift */; };
+		5B79A3542571FB250096D939 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B79A3532571FB250096D939 /* AlertManager.swift */; };
 		5B91ACB2255D8FB300C1A408 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B91ACB0255D8FB300C1A408 /* Main.storyboard */; };
 		5B91ACB4255DBEB700C1A408 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B91ACB3255DBEB700C1A408 /* GoogleService-Info.plist */; };
 		5BAE0EDF25361CF20093D3F3 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAE0EDE25361CF20093D3F3 /* ForgotPasswordViewController.swift */; };
@@ -33,7 +38,12 @@
 		5B334CB12534F3EE008002AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B334CDA2535516A008002AE /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		5B54A1B125715EBC00AE1D54 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5B54A1B52571674700AE1D54 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		5B54A1B725716F9F00AE1D54 /* PostBE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostBE.swift; sourceTree = "<group>"; };
+		5B54A1B9257173C900AE1D54 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		5B5F2BBF253638B900D04EE0 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		5B79A3512571F9D50096D939 /* ImageDownload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownload.swift; sourceTree = "<group>"; };
+		5B79A3532571FB250096D939 /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
 		5B91ACB1255D8FB300C1A408 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5B91ACB3255DBEB700C1A408 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5BAE0EDE25361CF20093D3F3 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +109,11 @@
 				5BAE0EE225361D6E0093D3F3 /* GradientViewController.swift */,
 				5B5F2BBF253638B900D04EE0 /* Colors.xcassets */,
 				5B54A1B125715EBC00AE1D54 /* HomeViewController.swift */,
+				5B54A1B52571674700AE1D54 /* PostTableViewCell.swift */,
+				5B54A1B725716F9F00AE1D54 /* PostBE.swift */,
+				5B54A1B9257173C900AE1D54 /* PostViewController.swift */,
+				5B79A3512571F9D50096D939 /* ImageDownload.swift */,
+				5B79A3532571FB250096D939 /* AlertManager.swift */,
 			);
 			path = ProyectoFinaliOS_Parodi;
 			sourceTree = "<group>";
@@ -233,10 +248,15 @@
 				5BAE0EDF25361CF20093D3F3 /* ForgotPasswordViewController.swift in Sources */,
 				5BAE0EE125361D290093D3F3 /* Colors.swift in Sources */,
 				5B54A1B225715EBC00AE1D54 /* HomeViewController.swift in Sources */,
+				5B54A1B825716F9F00AE1D54 /* PostBE.swift in Sources */,
+				5B79A3542571FB250096D939 /* AlertManager.swift in Sources */,
 				5BAE0EE325361D6E0093D3F3 /* GradientViewController.swift in Sources */,
 				5B334CA82534F3ED008002AE /* ViewController.swift in Sources */,
 				5B334CA42534F3ED008002AE /* AppDelegate.swift in Sources */,
 				5B334CA62534F3ED008002AE /* SceneDelegate.swift in Sources */,
+				5B79A3522571F9D50096D939 /* ImageDownload.swift in Sources */,
+				5B54A1B62571674700AE1D54 /* PostTableViewCell.swift in Sources */,
+				5B54A1BA257173C900AE1D54 /* PostViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
