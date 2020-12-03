@@ -9,13 +9,13 @@
 import UIKit
 import Firebase
 import FirebaseAuth
+import FirebaseDatabase
 
 class RegisterViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
    
     @IBOutlet weak var txtCarrer: UITextField!
     @IBOutlet weak var txtAge: UITextField!
     @IBOutlet weak var txtEmail: UITextField!
-    @IBOutlet weak var txtConfirmPassword: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var txtLastNames: UITextField!
     @IBOutlet weak var txtNames: UITextField!
@@ -164,13 +164,6 @@ class RegisterViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
                txtLastNames.layer.borderColor = UIColor.white.cgColor
            }
            
-           if txtConfirmPassword.text == "" {
-               txtConfirmPassword.placeholder = "INGRESA TU CONTRASEÑA NUEVAMENTE"
-               self.errorStyle(toInput: self.txtConfirmPassword)
-           }else {
-               txtConfirmPassword.layer.borderColor = UIColor.white.cgColor
-           }
-           
            if txtAge.text == "" {
                txtAge.placeholder = "INGRESA TU EDAD"
                self.errorStyle(toInput: self.txtAge)
@@ -185,17 +178,38 @@ class RegisterViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
                txtCarrer.layer.borderColor = UIColor.white.cgColor
            }
         
-        if let usuario = txtUser.text, let password = txtPassword.text{
-            Auth.auth().createUser(withEmail: usuario, password: password){
-              (result, error) in
-                if let result = result, error == nil{
+        if let email = txtEmail.text, let password = txtPassword.text{
+            Auth.auth().createUser(withEmail: email, password: password){
+              (user, error) in
+                if error == nil && user != nil{
+                    self.saveProfile(username: self.txtUser.text!, password: self.txtPassword.text!, email: self.txtEmail.text!, name: self.txtNames.text!, lastName: self.txtLastNames.text!, age: self.txtAge.text!, career: self.txtCarrer.text!) { (success) in
+                        self.performSegue(withIdentifier: "Feed", sender: nil)
+                    }
                 } else{
-                    let alertController = UIAlertController(title: "Error", message: "Se ha producido un error al registrar el usuario", preferredStyle: .alert)
+                    let alertController = UIAlertController(title: "Error", message: "Creacion de cuenta sin exito", preferredStyle: .alert)
                     alertController.addAction(UIAlertAction(title: "Aceptar", style: .default))
                     
                     self.present(alertController, animated: true, completion: nil)
                 }
             }
+        }
+    }
+    func saveProfile(username: String, password: String, email: String, name: String, lastName: String, age: String, career: String, completion: @escaping ((_ success: Bool)->())){
+        guard let uid = Auth.auth().currentUser?.uid else {return}
+        let databaseRef = Database.database().reference().child("users/profile/\(uid)")
+        
+        let userObject = [
+            "username"  : username,
+            "password"  : password,
+            "email"     : email,
+            "name"      : name,
+            "lastName"  : lastName,
+            "age"       : age,
+            "carrer"    : career
+        ] as [String:Any]
+        
+        databaseRef.setValue(userObject) { error, ref in
+            completion(error == nil)
         }
     }
 }

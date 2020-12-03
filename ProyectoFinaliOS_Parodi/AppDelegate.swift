@@ -8,13 +8,34 @@
 
 import UIKit
 import Firebase
+import FirebaseAuth
+import FirebaseDatabase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
         FirebaseApp.configure()
+        // Override point for customization after application launch.
+        
+        let authListener = Auth.auth().addStateDidChangeListener { auth, user in
+            
+            
+            if user != nil {
+                
+                UserService.observeUserProfile(user!.uid) { userBE in
+                    UserService.currentUserProfile = userBE
+                }
+            } else {
+                
+                
+                UserService.currentUserProfile = nil
+            }
+        }
+        
         return true
     }
 

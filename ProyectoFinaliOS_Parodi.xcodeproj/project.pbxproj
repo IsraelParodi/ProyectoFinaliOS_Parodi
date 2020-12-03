@@ -13,6 +13,10 @@
 		5B334CAD2534F3EE008002AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B334CAC2534F3EE008002AE /* Assets.xcassets */; };
 		5B334CB02534F3EE008002AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B334CAE2534F3EE008002AE /* LaunchScreen.storyboard */; };
 		5B334CDB2535516A008002AE /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B334CDA2535516A008002AE /* RegisterViewController.swift */; };
+		5B4BF9ED257977850050B644 /* UserBE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4BF9EC257977850050B644 /* UserBE.swift */; };
+		5B4BF9EF257978680050B644 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4BF9EE257978680050B644 /* UserService.swift */; };
+		5B4BF9F52579A0530050B644 /* CommentBE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4BF9F42579A0530050B644 /* CommentBE.swift */; };
+		5B4BF9F72579A4B20050B644 /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4BF9F62579A4B20050B644 /* CommentViewController.swift */; };
 		5B54A1B225715EBC00AE1D54 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B54A1B125715EBC00AE1D54 /* HomeViewController.swift */; };
 		5B54A1B62571674700AE1D54 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B54A1B52571674700AE1D54 /* PostTableViewCell.swift */; };
 		5B54A1B825716F9F00AE1D54 /* PostBE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B54A1B725716F9F00AE1D54 /* PostBE.swift */; };
@@ -37,6 +41,10 @@
 		5B334CAF2534F3EE008002AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B334CB12534F3EE008002AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B334CDA2535516A008002AE /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		5B4BF9EC257977850050B644 /* UserBE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBE.swift; sourceTree = "<group>"; };
+		5B4BF9EE257978680050B644 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		5B4BF9F42579A0530050B644 /* CommentBE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentBE.swift; sourceTree = "<group>"; };
+		5B4BF9F62579A4B20050B644 /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
 		5B54A1B125715EBC00AE1D54 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5B54A1B52571674700AE1D54 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		5B54A1B725716F9F00AE1D54 /* PostBE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostBE.swift; sourceTree = "<group>"; };
@@ -95,27 +103,47 @@
 		5B334CA22534F3ED008002AE /* ProyectoFinaliOS_Parodi */ = {
 			isa = PBXGroup;
 			children = (
+				5B4BF9F92579A7940050B644 /* Views */,
+				5B4BF9F82579A7740050B644 /* Models */,
 				5B91ACB3255DBEB700C1A408 /* GoogleService-Info.plist */,
 				5B91ACB0255D8FB300C1A408 /* Main.storyboard */,
 				5B334CA32534F3ED008002AE /* AppDelegate.swift */,
 				5B334CA52534F3ED008002AE /* SceneDelegate.swift */,
-				5B334CA72534F3ED008002AE /* ViewController.swift */,
 				5B334CAC2534F3EE008002AE /* Assets.xcassets */,
 				5B334CAE2534F3EE008002AE /* LaunchScreen.storyboard */,
 				5B334CB12534F3EE008002AE /* Info.plist */,
-				5B334CDA2535516A008002AE /* RegisterViewController.swift */,
-				5BAE0EDE25361CF20093D3F3 /* ForgotPasswordViewController.swift */,
 				5BAE0EE025361D290093D3F3 /* Colors.swift */,
 				5BAE0EE225361D6E0093D3F3 /* GradientViewController.swift */,
 				5B5F2BBF253638B900D04EE0 /* Colors.xcassets */,
-				5B54A1B125715EBC00AE1D54 /* HomeViewController.swift */,
 				5B54A1B52571674700AE1D54 /* PostTableViewCell.swift */,
-				5B54A1B725716F9F00AE1D54 /* PostBE.swift */,
-				5B54A1B9257173C900AE1D54 /* PostViewController.swift */,
 				5B79A3512571F9D50096D939 /* ImageDownload.swift */,
 				5B79A3532571FB250096D939 /* AlertManager.swift */,
+				5B4BF9EE257978680050B644 /* UserService.swift */,
 			);
 			path = ProyectoFinaliOS_Parodi;
+			sourceTree = "<group>";
+		};
+		5B4BF9F82579A7740050B644 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5B54A1B725716F9F00AE1D54 /* PostBE.swift */,
+				5B4BF9EC257977850050B644 /* UserBE.swift */,
+				5B4BF9F42579A0530050B644 /* CommentBE.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5B4BF9F92579A7940050B644 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5B334CA72534F3ED008002AE /* ViewController.swift */,
+				5B334CDA2535516A008002AE /* RegisterViewController.swift */,
+				5BAE0EDE25361CF20093D3F3 /* ForgotPasswordViewController.swift */,
+				5B54A1B125715EBC00AE1D54 /* HomeViewController.swift */,
+				5B54A1B9257173C900AE1D54 /* PostViewController.swift */,
+				5B4BF9F62579A4B20050B644 /* CommentViewController.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		EC10A002B1DE9F81596A4011 /* Pods */ = {
@@ -247,6 +275,9 @@
 				5B334CDB2535516A008002AE /* RegisterViewController.swift in Sources */,
 				5BAE0EDF25361CF20093D3F3 /* ForgotPasswordViewController.swift in Sources */,
 				5BAE0EE125361D290093D3F3 /* Colors.swift in Sources */,
+				5B4BF9ED257977850050B644 /* UserBE.swift in Sources */,
+				5B4BF9F52579A0530050B644 /* CommentBE.swift in Sources */,
+				5B4BF9F72579A4B20050B644 /* CommentViewController.swift in Sources */,
 				5B54A1B225715EBC00AE1D54 /* HomeViewController.swift in Sources */,
 				5B54A1B825716F9F00AE1D54 /* PostBE.swift in Sources */,
 				5B79A3542571FB250096D939 /* AlertManager.swift in Sources */,
@@ -254,6 +285,7 @@
 				5B334CA82534F3ED008002AE /* ViewController.swift in Sources */,
 				5B334CA42534F3ED008002AE /* AppDelegate.swift in Sources */,
 				5B334CA62534F3ED008002AE /* SceneDelegate.swift in Sources */,
+				5B4BF9EF257978680050B644 /* UserService.swift in Sources */,
 				5B79A3522571F9D50096D939 /* ImageDownload.swift in Sources */,
 				5B54A1B62571674700AE1D54 /* PostTableViewCell.swift in Sources */,
 				5B54A1BA257173C900AE1D54 /* PostViewController.swift in Sources */,

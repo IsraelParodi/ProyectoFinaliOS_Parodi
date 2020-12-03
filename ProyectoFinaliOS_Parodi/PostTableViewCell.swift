@@ -44,7 +44,7 @@ class PostTableViewCell: UITableViewCell {
     }
     private func updateData() {
         
-        self.username.text       = self.objPost.post_username
+        self.username.text       = self.objPost.post_author.email
         self.postText.text    = self.objPost.post_postText
         self.likes.text = String(self.objPost.post_likes)
         

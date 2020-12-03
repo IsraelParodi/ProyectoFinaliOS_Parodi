@@ -7,10 +7,13 @@
 //
 
 import Foundation
+import Firebase
+import FirebaseAuth
 import FirebaseDatabase
 
 class PostBE {
-    var post_username: String
+    var post_id: String
+    var post_author: UserBE
     var post_likes: Int
     var post_postText: String
     var post_imageUrl: String
@@ -19,9 +22,9 @@ class PostBE {
         return post_likes
     }
     
-    init(postText: String, likes: Int, urlImage: String, username: String) {
-        
-        self.post_username         = username
+    init(postId: String, postText: String, likes: Int, urlImage: String, postAuthor: UserBE) {
+        self.post_id               = postId
+        self.post_author           = postAuthor
         self.post_likes            = likes
         self.post_postText         = postText
         self.post_imageUrl         = urlImage

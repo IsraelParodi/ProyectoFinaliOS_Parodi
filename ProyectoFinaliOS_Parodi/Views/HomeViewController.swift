@@ -19,18 +19,12 @@ class HomeViewController: UIViewController {
     var arrayPosts = [PostBE]()
     var user = Auth.auth().currentUser
     
-    var objPost: PostBE!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.arrayPosts.append(PostBE(postText: "Probando InstaISIL", likes: 0, urlImage: "https://arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/K3DO42WB4VGLVPBGJPL4FQXOHQ.jpg", username: (user?.email)!))
-        
-        self.arrayPosts.append(PostBE(postText: "Profes de software?", likes: 0, urlImage: "https://arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/K3DO42WB4VGLVPBGJPL4FQXOHQ.jpg", username: (user?.email)!))
-        
-        self.arrayPosts.append(PostBE(postText: "Quihuboles!", likes: 0, urlImage: "https://arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/K3DO42WB4VGLVPBGJPL4FQXOHQ.jpg", username: (user?.email)!))
-        
         self.view.layer.cornerRadius = 10
+        
+        observePosts()
     
     }
     
@@ -65,6 +59,35 @@ class HomeViewController: UIViewController {
         }
         dismiss(animated: true, completion: nil)
         self.navigationController?.popViewController(animated: true)
+    }
+    
+    func observePosts(){
+        let postRef = Database.database().reference().child("posts")
+        postRef.observe(.value, with: { snapshot in
+            
+            var tempPosts = [PostBE]()
+            
+            for child in snapshot.children{
+                if let childSnapshot = child as? DataSnapshot,
+                    let dict = childSnapshot.value as? [String: Any],
+                    let author = dict["author"] as? [String: Any],
+                    let uid = author["uid"] as? String,
+                    let email = author["email"] as? String,
+                    let text = dict["text"] as? String,
+                    let urlImage = dict["urlImage"] as? String{
+                    
+                    let userProfile = UserBE(uid: uid, email: email)
+                    let post = PostBE(postId: childSnapshot.key, postText: text, likes: 0, urlImage: urlImage, postAuthor: userProfile)
+                    
+                    tempPosts.append(post)
+                    
+                }
+            }
+            
+            self.arrayPosts = tempPosts
+            self.tblPlaces.reloadData()
+            
+        })
     }
     
     func getUserData(){

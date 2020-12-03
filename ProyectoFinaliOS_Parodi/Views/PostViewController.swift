@@ -7,7 +7,9 @@
 //
 
 import UIKit
+import Firebase
 import FirebaseAuth
+import FirebaseDatabase
 
 protocol PostViewControllerDelegate {
     func postViewController(_ controller: PostViewController, didRegisterPost post: PostBE)
@@ -36,11 +38,30 @@ class PostViewController: UIViewController {
             return
         }
         
+         
+        
         self.showAlertWithTitle("Agregar", message: "¿Deseas agregar este lugar?", acceptButton: "Aceptar", cancelButton: "Cancelar", acceptHandler: {
             
-            let objPost = PostBE(postText: postText, likes: 0, urlImage: urlImage, username: (self.user?.email)!)
-            self.delegate?.postViewController(self, didRegisterPost: objPost)
-            self.navigationController?.popViewController(animated: true)
+            let postRef = Database.database().reference().child("posts").childByAutoId()
+            
+            var userBE = UserBE(uid: self.user!.uid, email: self.user!.email!)
+            
+            let postObject = [
+                "author": [
+                    "uid": userBE.uid,
+                    "email": userBE.email
+                ],
+                "text": self.txtPostContent.text!,
+                "urlImage": self.txtUrlImage.text!
+            ] as [String:Any]
+            
+            postRef.setValue(postObject, withCompletionBlock: { error, ref in
+                if error == nil{
+                    self.navigationController?.popViewController(animated: true)
+                } else {
+                    
+                }
+            })
             
         })
     
